@@ -8,12 +8,14 @@ public class Employee {
     private String empName;
     private String department;
     private BigDecimal salary;
+    private Integer age;
 
-    public Employee(Integer empID, String empName, String department, BigDecimal salary) {
+    public Employee(Integer empID, String empName, String department, BigDecimal salary, Integer age) {
         this.empID = empID;
         this.empName = empName;
         this.department = department;
         this.salary = salary;
+        this.age = age;
     }
 
     public Integer getEmpID() {
@@ -46,5 +48,13 @@ public class Employee {
 
     public void setSalary(BigDecimal salary) {
         this.salary = salary;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
     }
 }
